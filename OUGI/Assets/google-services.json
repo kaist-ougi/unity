@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "380651174610",
+    "firebase_url": "https://ougi-fb.firebaseio.com",
+    "project_id": "ougi-fb",
+    "storage_bucket": "ougi-fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380651174610:android:769758e90f55c8abd5cb0b",
+        "android_client_info": {
+          "package_name": "com.Team1.OUGI"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "380651174610-ut1ve8j8boods8dujtona8o4euejoori.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Team1.OUGI",
+            "certificate_hash": "60eaf545141632aa6a8f8fbe20160d94bc2cc779"
+          }
+        },
+        {
+          "client_id": "380651174610-vskmpj4spjg9g31eih26acm7ld8psesj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxZ6tIfhv-7BL6jtXLod2zCfNz_8Cbl3E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "380651174610-vskmpj4spjg9g31eih26acm7ld8psesj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
