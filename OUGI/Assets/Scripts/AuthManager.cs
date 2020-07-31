@@ -27,37 +27,15 @@ public class AuthManager : MonoBehaviour
 
     public static FirebaseUser User;
 
+    private void Awake()
+    {
+        // 이제 fb를 사용가능하니 fb app 할당
+        firebaseApp = FirebaseApp.DefaultInstance;
+        firebaseAuth = FirebaseAuth.DefaultInstance;
+    }
 
     private void Start()
     {
-        // 준비가 되지 않았으니 누를 수 없도록 설정
-        signButton.interactable = false;
-
-        // 현재 fb를 구동할 수 있는 환경인지를 체크
-        // async method이기 때문에 실행하지마자 완료를 기다리지 않고 바로 다음 구문으로 넘어간다. = 콜백이나 체인을 걸어야함
-        // 여기서는 체인을 걸어서(= ContinueWith() 혹은 ContinueWithOnMainThread()) async()가 끝났을 때 이어서 실행할 것을 명시.
-        FirebaseApp.CheckAndFixDependenciesAsync().ContinueWithOnMainThread(task => // task로 lambda call-back
-        {
-            var result = task.Result; //일단 결과를 받아온다
-
-            if (result != DependencyStatus.Available) // fb 구동 불가능 상태라면
-            {
-                Debug.LogError(result.ToString()); // 경고(에러) 로그
-                IsFirebaseReady = false;
-            }
-            else
-            {
-                IsFirebaseReady = true;
-
-                // 이제 fb를 사용가능하니 fb app 할당
-                firebaseApp = FirebaseApp.DefaultInstance;
-                firebaseAuth = FirebaseAuth.DefaultInstance;
-                // firebaseAuth = FirebaseAuth.GetAuth(firebaseApp); 을 해도 결과는 같다. 근데 가끔 에러남.
-            }
-            // IsFirebaseReady == ture면 활성화
-            signButton.interactable = IsFirebaseReady;
-        }
-        ); // 결과적으로 잠시 비활성화 됐다가 곧 활성화 됨.
     }
 
     public void SignUp() // sign up 회원가입
