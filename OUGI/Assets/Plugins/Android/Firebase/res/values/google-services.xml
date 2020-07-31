@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources tools:keep="@string/firebase_database_url,@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_android_client_id,@string/default_web_client_id" xmlns:tools="http://schemas.android.com/tools">
+  <string name="firebase_database_url" translatable="false">https://ougi-fb.firebaseio.com</string>
+  <string name="gcm_defaultSenderId" translatable="false">380651174610</string>
+  <string name="google_storage_bucket" translatable="false">ougi-fb.appspot.com</string>
+  <string name="project_id" translatable="false">ougi-fb</string>
+  <string name="google_api_key" translatable="false">AIzaSyBxZ6tIfhv-7BL6jtXLod2zCfNz_8Cbl3E</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBxZ6tIfhv-7BL6jtXLod2zCfNz_8Cbl3E</string>
+  <string name="google_app_id" translatable="false">1:380651174610:android:769758e90f55c8abd5cb0b</string>
+  <string name="default_android_client_id" translatable="false">380651174610-ut1ve8j8boods8dujtona8o4euejoori.apps.googleusercontent.com</string>
+  <string name="default_web_client_id" translatable="false">380651174610-vskmpj4spjg9g31eih26acm7ld8psesj.apps.googleusercontent.com</string>
+</resources>
